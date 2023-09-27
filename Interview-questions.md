@@ -38,3 +38,18 @@ When we use git init in any directory that directory becomes root directory and 
 
   <img width="669" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/23bf37d5-6e59-4654-998c-47d5f63b0de2">
 
+- How to restore a file that is deleted?
+
+      git restore commands.txt 
+
+<img width="536" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/2e3b7682-5a54-4cfa-a510-b437e87efb43">
+
+-  How to config git?
+
+        git config --global user.name ""
+
+        git config --global user.email ""
+
+  Enter the user name and email address of the GitHub.
+
+
