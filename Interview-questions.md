@@ -169,6 +169,9 @@ Now we can see that the head is on create commands.txt and head of origin on upd
 <img width="815" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/5b368b4f-cd67-4e8a-a325-0044ac2d88ae">
 
 
-  Sample.txt have been pushed to GitHub repo.
+-  Sample.txt have been pushed to GitHub repo.
 
   <img width="697" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/e10a23ac-3fdd-4147-9d90-ccb7c5221e5e">
+
+
+- 
