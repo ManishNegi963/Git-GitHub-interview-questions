@@ -126,4 +126,49 @@ Now we can see that the head is on create commands.txt and head of origin on upd
 
 <img width="533" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/86984190-b097-4ff6-b5c9-2216bd75b6f6">
 
+  NOTE:
+   - Git pull is also used when you want to pull changes from a single branch.
+   - Git fetch is used when you want to fetch all the changes from all the branch.
+   - Git clone is used to copy whole repository.
 
+- HOw to view origin url/remote repository ?
+
+      git remote -v
+
+  <img width="498" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/1a24adf9-2c61-4150-8eb4-b0ccd2455b3a">
+
+
+- Now go to setting in github > developer setting > personal access token > generate new token > check the rights you want to give and then copy the token.
+
+  <img width="757" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/f992915f-9589-49fc-b6d5-b06ccbe29ba5">
+
+
+
+-   Now if we try to push using username and password is not safe practice.
+
+   <img width="494" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/743a12b1-ef37-4893-8d8e-51e5b7c66ad3">
+
+  - Adding the token into url
+
+         git remote set-url --add origin https://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@github.com/ManishNegi963/git-fetch-practice.git
+
+    <img width="848" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/07b9429a-1dba-4c7f-bf82-42916ae34815">
+
+
+- NOw we have 2 url for push, delete the old url
+
+      git remote set-url --delete origin https://github.com/ManishNegi963/git-fetch-practice.git
+
+<img width="851" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/8e25093e-eb45-418e-903f-ac6831ad4bde">
+
+
+- Push the changes to the GIthub repo.
+
+      git push origin main
+
+<img width="815" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/5b368b4f-cd67-4e8a-a325-0044ac2d88ae">
+
+
+  Sample.txt have been pushed to GitHub repo.
+
+  <img width="697" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/e10a23ac-3fdd-4147-9d90-ccb7c5221e5e">
