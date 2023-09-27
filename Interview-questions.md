@@ -19,3 +19,22 @@
 - What is a fork?
 
    It is a entire copy of the source code/repository in GitHUb, where you can copy the entire public repository of anyone into your Github account. 
+
+- What is the difference between Git & GitHub?
+
+  Git: Git is version control system where it allows to track changes in the code over time.
+
+
+- How to track any director and initialize git?
+
+      git init
+
+  <img width="605" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/bfa323b1-2dbe-400c-8016-61342ea7d48e">
+When we use git init in any directory that directory becomes root directory and evry file in that directory in now tracked.
+
+- How to unstage the file?
+
+      git rm --cached
+
+  <img width="669" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/23bf37d5-6e59-4654-998c-47d5f63b0de2">
+
