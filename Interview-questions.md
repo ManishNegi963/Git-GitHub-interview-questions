@@ -25,7 +25,7 @@
   Git: Git is version control system where it allows to track changes in the code over time.
 
 
-- How to track any director and initialize git?
+- How to track any directory and initialize empty git repository?
 
       git init
 
@@ -38,7 +38,7 @@ When we use git init in any directory that directory becomes root directory and 
 
   <img width="669" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/23bf37d5-6e59-4654-998c-47d5f63b0de2">
 
-- How to restore a file that is deleted?
+- How to restore a file(commited) that is deleted?
 
       git restore commands.txt 
 
@@ -52,4 +52,15 @@ When we use git init in any directory that directory becomes root directory and 
 
   Enter the user name and email address of the GitHub.
 
+- How to unstage a file?
+
+      git restore --staged README.md
+
+<img width="569" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/df1de0ba-5b8d-441e-b4bc-5ad04bb8d1e2">
+
+- Difference between main and master branch.
+
+  Main is default branch in the GitHub and master is default branch in the local.
+
+- 
 
