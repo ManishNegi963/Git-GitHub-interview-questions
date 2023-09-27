@@ -62,5 +62,68 @@ When we use git init in any directory that directory becomes root directory and 
 
   Main is default branch in the GitHub and master is default branch in the local.
 
-- 
+## IMPORTANT QUESTION:
+
+- Difference between git fetch and git pull.
+
+ - Let's first create repository in GitHub and a file named as commands.txt having text as git init & git push
+
+  <img width="441" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/86b9737f-c6b3-4ec6-8bbd-a3eab0d7bd90">
+
+ - Now clone the repository into the local.
+
+      git clone https://github.com/ManishNegi963/git-fetch-practice.git
+
+<img width="691" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/d5474da1-976c-49be-bc6a-8b3a1ea4681f">
+
+ - Now edit the commands.txt in the GitHub with text git pull git fetch
+
+   <img width="348" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/2d424568-f453-49b8-a16b-9d1496acfd82">
+
+- In the local, use git fetch
+
+      git fetch origin
+
+  <img width="487" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/5780d846-fa5f-49fd-9a54-848d7c69d406">
+
+Git fetch will retreive the changes from the remote repository to the local but won't merge those changes, we can check the log or git diff to decide if we want to apply those changes or not.
+
+- Check the changes by using git log --all
+
+      git log --all 
+
+<img width="572" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/eb73758d-1cac-4f4c-8e6f-f8e9a6d59de3">
+
+Now we can see that the head is on create commands.txt and head of origin on update commands.txt
+
+- CHeck the changes by using git diff main origin/main
+
+      git diff main origin/main
+
+  <img width="574" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/e13a116a-4def-4e85-bdbc-b0e6511ccc67">
+
+- NOw use git merge to merge those changes into local
+
+      git merge origin/main
+
+<img width="556" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/10207a2e-4337-4aca-b0b3-a0fce1276204">
+
+- NOw head of local and remote are same.
+
+      git log
+
+  <img width="651" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/638cceac-f9bd-46a4-b529-ef603c041f49">
+
+- Now , in case of git pull
+
+  let's edit the commands.txt and add text git log
+
+  - Using git pull
+ 
+        git pull origin main
+
+    It will auto merge the changes from the remote repository to the local.
+
+<img width="533" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/86984190-b097-4ff6-b5c9-2216bd75b6f6">
+
 
