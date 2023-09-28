@@ -327,3 +327,19 @@ gti reset removed the logs and untracked the changes.
 
   <img width="550" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/a9c5b6df-969e-4636-b0cf-f1f25f931767">
 
+- Delete local branch
+
+      git branch -D dev
+
+- Delete remote branch (IMPORTANT)
+
+      git push origin --delete dev
+
+- Suppose I want to clone a repo and in that repo we have 3 branches QA.staging amd master , How to clone QA branch to, local machine? (IMPORTANT SCENARIO BASED QUESTION)
+
+      git clone -b QA https://github.com/ManishNegi963/git-multibranch-clone-test.git
+
+  <img width="848" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/74d616d9-55a1-4e9a-b3c1-9bd63b9e1524">
+
+- 
+
