@@ -246,4 +246,84 @@ gti reset removed the logs and untracked the changes.
 
   <img width="392" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/17a5d289-1166-4f0c-8c02-62c2aa9f7f01">
 
-- 
+- Use case git rebase vs git merge
+
+  SUppose you went to holiday and now to get all the changes in sequential manner you can use git rebase.
+
+  There were some changes in master branch in GItHUb while you were on holidays, then use git pull origin master --rebase in local, it will take all the log history in sequential manner in your local.
+
+      git pull origin master --rebase
+
+  but if you use git merge then it will pull the last head from github.
+
+ - Use case of cherry-pick
+ 
+   - suppose you added a feature6 for later use in dev branch and then added fesature7.
+
+<img width="484" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/8325d3d9-3f4d-467c-b325-44dcfdf2f4be">
+
+
+  - then you go to master branch and want feature6 only, then we can use git cherry-pick
+
+            git cherry-pick 32b9fac
+
+  <img width="421" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/4f86d022-7ea3-4959-ac52-bccb06f061f9">
+
+
+- Use case of git stash
+
+  Suppose you are working on feature8 and then in middle of work you go to another branch staging and in that feature8 you have half work and you don't want to commit that half work
+  then you can temporarily store that work into stash by using git stash.
+
+   - Added half work but didnt want to commit the half work
+ 
+ <img width="517" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/c75b51e9-b980-4b20-9371-66055928ea6b">
+
+  - use git diff to see the half work/not commited
+
+    <img width="455" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/78f6816c-5a93-4d2e-a826-e3660fe1c439">
+
+- store the work in temporary by using git stash
+
+      git stash
+
+<img width="540" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/a2a0afe7-10c7-4503-8411-a70db27b4903">
+
+- Pop out the stashed work
+
+      git stash pop
+
+  <img width="587" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/76938c0e-d619-40a9-8325-133c8bc26c3d">
+
+- How to resolve merge conflict?
+
+- Editing a file in local feature-6.txt and commit
+
+  <img width="563" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/df9b941c-b397-4fbd-9336-6cc1546a15d6">
+
+  - Now go to the same file in dev branch in Github an edit the same lines and commit
+ 
+    <img width="588" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/8a4fdadd-e9be-4ad6-ae1b-e98cca40b367">
+
+- Now local and remote both have made changes to the same lines in same file and it create a conflict to which code to use when we do git pull origin dev.
+
+       git pull origin dev
+ 
+<img width="562" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/d3c82de9-2b1c-4abe-8886-8afbc7935d0a">
+
+- Now we can merge both code using --ff(fast forward)
+
+       git pull origin dev --ff
+
+- NOw check the status as both are modified.
+
+  <img width="565" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/5f1aae14-31ea-4347-9015-d46152bb19c6">
+
+- NOw edit the file feature-6.txt and choose which code to use
+
+<img width="629" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/996e430d-b747-4db3-8034-05121452082c">
+
+- Using github code
+
+  <img width="550" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/a9c5b6df-969e-4636-b0cf-f1f25f931767">
+
