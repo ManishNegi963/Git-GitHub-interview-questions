@@ -378,19 +378,18 @@ gti reset removed the logs and untracked the changes.
 
 3. **Naming Convention:**
    - **Version Numbers:** Release branches are often named after the version number they represent (e.g., `release-1.0.0`).
-
-4. **Integration:**
+   - 
    - **Bug Fixes Only:** Typically, no new features are added to a release branch; it only receives bug fixes and updates to prepare for release.
 
-5. **Concurrency:**
-   - **Single Release Branch:** Usually, there is only one release branch at a time corresponding to the imminent release.
-
-6. **Example Workflow:**
+4. **Example Workflow:**
    - 1. **Create Release Branch:** `git checkout -b release-1.0.0`
    - 2. **Stabilize:** Address any issues or bugs to ensure stability.
    - 3. **Test:** Rigorous testing on the release branch.
    - 4. **Merge into Production:** Once stable, merge the release branch into the production branch (e.g., `master`).
 
 In summary, feature branches are focused on developing new features, while release branches are focused on preparing the codebase for a stable release. They play different roles in managing the software development life cycle.
+
+<img width="232" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/97185c15-8446-4402-8a19-4388da4bdadd">
+
 
 
