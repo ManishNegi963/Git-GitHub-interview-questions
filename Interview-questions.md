@@ -391,5 +391,11 @@ In summary, feature branches are focused on developing new features, while relea
 
 <img width="232" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/97185c15-8446-4402-8a19-4388da4bdadd">
 
+- Easy way to check the log of a any branch
+
+      git log branchname
+
+<img width="438" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/4a9a5cdb-ff48-4e9f-962c-ed79a9544e3b">
+
 
 
