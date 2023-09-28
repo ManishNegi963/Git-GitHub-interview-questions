@@ -341,5 +341,56 @@ gti reset removed the logs and untracked the changes.
 
   <img width="848" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/74d616d9-55a1-4e9a-b3c1-9bd63b9e1524">
 
-- 
+- Difference b/w feature branch and release branch.
+
+  Feature branches and release branches serve distinct purposes in a version control workflow, typically in Git. Let's explore the key differences between them:
+
+## Feature Branch:
+
+1. **Purpose:**
+   - **Development of a New Feature:** Feature branches are created to work on a specific feature or piece of functionality.
+
+2. **Lifespan:**
+   - **Short-Lived:** They are usually short-lived, existing only for the duration of the development of the feature.
+
+3. **Naming Convention:**
+   - **Descriptive Names:** Feature branches often have descriptive names related to the feature they are implementing (e.g., `user-authentication`).
+
+4. **Integration:**
+   - **Merging into Development:** After the feature is complete and tested, the branch is typically merged into the main development branch (e.g., `develop`).
+
+5. **Concurrency:**
+   - **Multiple Feature Branches:** It's common to have multiple feature branches concurrently, each working on a different feature.
+
+6. **Example Workflow:**
+   - 1. **Create Feature Branch:** `git checkout -b feature-branch-name`
+   - 2. **Work on Feature:** Implement the new feature.
+   - 3. **Test:** Ensure the feature works as expected.
+   - 4. **Merge:** Merge the feature branch into the development branch.
+
+## Release Branch:
+
+1. **Purpose:**
+   - **Preparation for a Release:** Release branches are created when the development branch is in a stable state, and the team is preparing for a new release.
+
+2. **Lifespan:**
+   - **Temporary for Stabilization:** They exist temporarily to stabilize and prepare the codebase for a production release.
+
+3. **Naming Convention:**
+   - **Version Numbers:** Release branches are often named after the version number they represent (e.g., `release-1.0.0`).
+
+4. **Integration:**
+   - **Bug Fixes Only:** Typically, no new features are added to a release branch; it only receives bug fixes and updates to prepare for release.
+
+5. **Concurrency:**
+   - **Single Release Branch:** Usually, there is only one release branch at a time corresponding to the imminent release.
+
+6. **Example Workflow:**
+   - 1. **Create Release Branch:** `git checkout -b release-1.0.0`
+   - 2. **Stabilize:** Address any issues or bugs to ensure stability.
+   - 3. **Test:** Rigorous testing on the release branch.
+   - 4. **Merge into Production:** Once stable, merge the release branch into the production branch (e.g., `master`).
+
+In summary, feature branches are focused on developing new features, while release branches are focused on preparing the codebase for a stable release. They play different roles in managing the software development life cycle.
+
 
