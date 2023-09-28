@@ -174,4 +174,37 @@ Now we can see that the head is on create commands.txt and head of origin on upd
   <img width="697" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/e10a23ac-3fdd-4147-9d90-ccb7c5221e5e">
 
 
+- Use Case of git revert
+
+  Suppose you created a bug in the application and you want to revert that code (don't delete the file as it will delete the functionality also",
+  use git revert to revert the commit.
+
+- Create a good feature 
+
+<img width="544" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/437b8990-9c24-4163-8ec3-3ddab5d59c5e">
+
+- NOw added bug
+
+  <img width="585" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/f185fbae-652d-4a7d-a9ff-6ff0ff1f2fb9">
+
+- View feature2 file
+
+  <img width="476" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/17046e13-46a4-40bb-ac43-317e0a3a566b">
+
+ - Reverting the bug commit
+
+       git revert f54cafd
+
+<img width="493" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/ee562dee-3849-4171-a759-38c68d767e19">
+
+  git revert also create a commit for revert, only the bug commit will be reverted and functionality remains same.
+
+
+- Bug feature in feature2 file has been removed
+
+  <img width="427" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/c8980125-63bc-4137-a58d-013a9b79c599">
+
 - 
+ 
+
+
