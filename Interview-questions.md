@@ -204,7 +204,46 @@ Now we can see that the head is on create commands.txt and head of origin on upd
 
   <img width="427" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/c8980125-63bc-4137-a58d-013a9b79c599">
 
-- 
+- Use case of git reset
+
+  Suppose you have keys commited to git and now you have remove those keys from git, for that we will use git reset to untrack changes.
+
+  - Commit keys with feature3 and 
  
+        git add .
 
+ Ths will commit all the untracked files.
 
+ <img width="422" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/672743e9-48be-4df5-b48e-4214c832c6e5">
+
+- added more fucnc and keep working on it.
+
+<img width="514" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/6603ff0b-c08a-4bea-ac95-3fc5515bedd5">
+
+- now use git reset to reset to the last commit where keys were not tracked/commited.
+
+      git reset 28878ad
+
+gti reset removed the logs and untracked the changes.
+
+<img width="497" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/afd1dcf6-4637-429f-8240-5741be5033c4">
+
+- Now you have the keys untracked.
+
+<img width="571" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/28a34ea3-039e-4720-89b3-3056fb08b35a">
+
+- Use case of .gitignore
+
+  Suppose you want a file not to be committed/tracked for example keys, then we can put that file in .gitignore
+
+  <img width="228" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/84d921a3-91d5-48de-8679-adf4d84107b1">
+
+- commit .gitigore file
+
+  <img width="566" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/32a62371-0bcb-4d89-901c-4b16399f66f9">
+
+- view git status
+
+  <img width="392" alt="image" src="https://github.com/ManishNegi963/Git-GitHub-interview-questions/assets/124788172/17a5d289-1166-4f0c-8c02-62c2aa9f7f01">
+
+- 
